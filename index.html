@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <title>interactive-card-details</title>
+</head>
+<body>
+    <div class="card-container">
+        <div class="position">
+    <div class="back-card">
+       <div class="back-number">000</div>
+    </div>
+    <div class="front-card">
+        <div class="circle">
+            <img class="card-logo" src="./images/card-logo.svg" alt="">
+        </div>
+        <div class="detail">
+            <div class="front-card-number">0000 0000 0000 0000</div>
+        <div class="name-valid">
+            <div class="name">JANE APPLESEED</div>
+            <div class="valid"> <span class="mm">00</span> / <span class="yy">00</span> </div>
+        </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="info">
+    <div class="card-name">
+        <h1>Cardholder Name</h1>
+       <input class="card-name-input" type="text"  placeholder="e.g. Jane Appleseed">
+    </div>
+    <div class="card-mumder">
+        <h1>Card Number</h1>
+        <input class="card-number-input" type="text"  placeholder="e.g. 1234 5678 9123 0000">
+        <div class="number-error">Wrong format, numbers only</div>
+    </div>
+    <div class="date">
+        <div class="label">
+            <h1>Exp. Date (MM/YY)</h1>
+            <h1>CVC</h1>
+        </div>
+        <div class="inputs">
+            <input type="number" class="month" placeholder="MM">
+            <input type="number" class="year" placeholder="YY">
+            <input type="number" class="cvc" id="number-cvc" placeholder="e.g. 123">
+        </div>
+        <div class="error">
+            <div class="exp-error">Can't be blank</div>
+            <div class="cvc-error">Can't be blank</div>
+        </div>
+        <div class="button-center">
+            <button class="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="complate">
+        <div class="icon-complete">
+            <img src="./images/icon-complete.svg" alt="complete">
+            <div class="thankyou">THANK YOU!</div>
+            <div class="add">We've added your card details</div>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
